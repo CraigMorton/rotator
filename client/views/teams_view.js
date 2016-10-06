@@ -2,7 +2,7 @@ var Teams = require('../models/teams');
 
 var TeamsView = function() {
   this.model = new Team();
-  this.render(team);
+  this.render(this.model);
 }
 
 TeamView.prototype.render = function() {

@@ -2,7 +2,7 @@ var Spinner = require('../models/spinner.js');
 
 var SpinnerView = function() {
   this.model = new Spinner();
-  this.render(spinner);
+  this.render(this.model);
 }
 
 SpinnerView.prototype.render = function() {
