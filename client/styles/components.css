@@ -1,8 +1,13 @@
 #spin-button button {
   border-radius: 20%;
-  border: 1px solid #aaa;
+  border: 1px solid $third;
   padding: 15px;
   background-color: $second;
+  color: $third;
+}
+
+#spin-button button:hover {
+  border: 1px solid $fourth;
 }
 
 #spinner {
