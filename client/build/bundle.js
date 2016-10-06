@@ -48,11 +48,9 @@
 	
 	window.onload = () => {
 	  var container = document.querySelector('#images-container');
-	  
-	  for (var student of students) {
-	    var img = document.createElement('img');
-	    img.src = 'images/' + student + '.jpg';
-	    container.appendChild(img);
+	
+	  for (var team of students) {
+	    doStuff();
 	  }
 	}
 	
@@ -64,30 +62,43 @@
 /***/ function(module, exports) {
 
 	var students = [
-	  'adrian',
-	  'alex',
-	  'bertie',
-	  'bobby',
-	  'carlos',
-	  'claudia',
-	  'cookie',
-	  'cyrus',
-	  'david',
-	  'diana',
-	  'euan',
-	  'josephine',
-	  'kate',
-	  'kyle',
-	  'matthew',
-	  'max',
-	  'pavlos',
-	  'phil',
-	  'ross',
-	  'thomas',
-	  'tom'
+	  [
+	    'adrian',
+	    'alex',
+	    'bertie',
+	    'bobby'
+	  ],
+	  [
+	    'carlos',
+	    'claudia',
+	    'cookie',
+	    'cyrus'
+	  ],
+	  [
+	    'david',
+	    'diana',
+	    'euan',
+	    'josephine'
+	  ],
+	  [
+	    'kate',
+	    'kyle',
+	    'matthew'
+	  ],
+	  [
+	    'max',
+	    'pavlos',
+	    'phil'
+	  ],
+	  [
+	    'ross',
+	    'thomas',
+	    'tom'
+	  ]
 	]
 	
 	module.exports = students;
+
 
 /***/ }
 /******/ ]);
