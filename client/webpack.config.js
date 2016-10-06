@@ -1,4 +1,5 @@
 var autoprefixer = require('autoprefixer');
+var precss = require('precss');
 
 config = {
   entry: "./app.js",

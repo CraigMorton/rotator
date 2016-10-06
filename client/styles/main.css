@@ -1,7 +1,7 @@
 @import 'normalize.css';
-
+$red: "red";
 body {
-  background-color: oldlace;
+  background-color: $red;
 }
 
 h1 {

@@ -46,13 +46,17 @@
 
 	__webpack_require__(1);
 	var students = __webpack_require__(6);
+	var Teams = __webpack_require__(7);
 	
 	window.onload = () => {
 	  var container = document.querySelector('#images-container');
 	
 	  for (var team of students) {
-	    doStuff();
+	    //doStuff();
 	  }
+	
+	
+	  var teams = new Teams();
 	}
 	
 	console.log(students);
@@ -93,7 +97,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "body {\n  background-color: oldlace;\n}\n\nh1 {\n  margin: 0px;\n  line-height: 75px;\n}\n\nimg {\n  height: 200px;\n}\n\n#spinner {\n  \n}\n\n#spin-button {\n\n}\n/**\nyellow #FBFFB9\npeach #FDD692\nred #EC7357\nbrown #754F44\n**/\n\n#teams {\n  margin: 20px;\n}\n\n.flex {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.row{\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n\n.center {\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n\n.wrap {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n\n#spin-button button {\n  border-radius: 20%;\n  border: 1px solid #aaa;\n  padding: 15px;\n  background-color: \n}", ""]);
+	exports.push([module.id, "$red: \"red\";\nbody {\n  background-color: $red;\n}\n\nh1 {\n  margin: 0px;\n  line-height: 75px;\n}\n\nimg {\n  height: 200px;\n}\n\n#spinner {\n  \n}\n\n#spin-button {\n\n}\n/**\nyellow #FBFFB9\npeach #FDD692\nred #EC7357\nbrown #754F44\n**/\n\n#teams {\n  margin: 20px;\n}\n\n.flex {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.row{\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n\n.center {\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n\n.wrap {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n\n#spin-button button {\n  border-radius: 20%;\n  border: 1px solid #aaa;\n  padding: 15px;\n  background-color: \n}", ""]);
 	
 	// exports
 
@@ -461,6 +465,19 @@
 	]
 	
 	module.exports = students;
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var students = __webpack_require__(6);
+	
+	var Teams = function() {}
+	
+	Teams.prototype.blah = function() {}
+	
+	module.exports = Teams;
 
 
 /***/ }

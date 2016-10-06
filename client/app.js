@@ -1,5 +1,6 @@
 require("./styles/main.css");
 var students = require('../data/students.js');
+var Teams = require('./models/teams.js');
 
 window.onload = () => {
   var container = document.querySelector('#images-container');
@@ -8,7 +9,7 @@ window.onload = () => {
     //doStuff();
   }
 
-  var Teams = require('./models/teams.js');
+
   var teams = new Teams();
 }
 
