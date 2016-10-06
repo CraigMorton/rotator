@@ -45,22 +45,15 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	var students = __webpack_require__(6);
-	var Teams = __webpack_require__(7);
 	
-	window.onload = () => {
-	  var container = document.querySelector('#images-container');
+	var TeamsView = __webpack_require__(6);
+	var students = __webpack_require__(7);
 	
-	  for (var team of students) {
-	    //doStuff();
-	  }
-	
-	
-	  var teams = new Teams();
+	var app = () => {
+	  new TeamsView(students);
 	}
 	
-	console.log(students);
-
+	window.onload = app;
 
 /***/ },
 /* 1 */
@@ -428,6 +421,42 @@
 /* 6 */
 /***/ function(module, exports) {
 
+	var TeamsView = function(teams) {
+	  this.teams = teams;
+	  this.render(this.model);
+	}
+	
+	TeamsView.prototype.createImage = function(student) {
+	  var newImage = document.createElement('img');
+	  newImage.src = '/images/' + student + '.jpg';
+	  return newImage;
+	}
+	
+	TeamsView.prototype.displayTeam = function(team) {
+	  var container = document.querySelector('#teams');
+	  var teamContainer = document.createElement('div');
+	
+	  for (var student of team) {
+	    var newImage = this.createImage(student);
+	    teamContainer.appendChild(newImage);
+	  }
+	
+	  container.appendChild(teamContainer);
+	}
+	
+	TeamsView.prototype.render = function() {
+	  for (var team of this.teams) {
+	    this.displayTeam(team);
+	  }
+	}
+	
+	module.exports = TeamsView;
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
 	var students = [
 	  [
 	    'adrian',
@@ -465,19 +494,6 @@
 	]
 	
 	module.exports = students;
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var students = __webpack_require__(6);
-	
-	var Teams = function() {}
-	
-	Teams.prototype.blah = function() {}
-	
-	module.exports = Teams;
 
 
 /***/ }
