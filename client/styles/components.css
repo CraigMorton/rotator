@@ -1,13 +1,15 @@
 #spin-button button {
   border-radius: 20%;
-  border: 1px solid $third;
+  border: 1px solid $border;
   padding: 15px;
   background-color: $second;
   color: $third;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 #spin-button button:hover {
-  border: 1px solid $fourth;
+  box-shadow: 2px 2px 5px $fourth;
 }
 
 #spinner {
@@ -16,5 +18,5 @@
 
 #spinner-container {
   width: 80%;
-  margin: 0px auto;
+  margin: 20px auto;
 }
