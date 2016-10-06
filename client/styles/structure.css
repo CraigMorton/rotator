@@ -1,11 +1,13 @@
 body {
   background-color: $primary;
-  color: $third;
+  color: $text;
 }
 
 h1 {
-  margin: 0px;
+  margin: 10px 0px;
   line-height: 75px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4.5em;
 }
 
 img {
