@@ -1,0 +1,40 @@
+body {
+  background-color: $third;
+}
+
+h1 {
+  margin: 0px;
+  line-height: 75px;
+}
+
+img {
+  height: 200px;
+}
+
+#spinner {
+  
+}
+
+#spin-button {
+
+}
+
+#teams {
+  margin: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.center {
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
