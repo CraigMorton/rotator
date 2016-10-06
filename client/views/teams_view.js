@@ -1,6 +1,5 @@
 var TeamsView = function(teams) {
   this.teams = teams;
-  this.render(this.model);
 }
 
 TeamsView.prototype.createImage = function(student) {
