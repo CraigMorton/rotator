@@ -14,7 +14,7 @@ config = {
     ]
   },
   postcss: function () { //NEW
-    return [autoprefixer];
+    return [autoprefixer, precss];
   }
 }
 
