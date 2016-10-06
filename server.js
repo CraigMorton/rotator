@@ -9,5 +9,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(3000, function() {
-  console.log('Beth be crazy on port', this.address().port);
+  console.log('App spinning up on port ' + this.address().port + ' ( ͡° ͜ʖ ͡°)');
 });
