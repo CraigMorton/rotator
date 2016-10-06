@@ -34,3 +34,7 @@ img {
   justify-content: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
