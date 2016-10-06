@@ -7,3 +7,18 @@ h1 {
 img {
   height: 200px;
 }
+
+#spinner {
+  height: 200px;
+  background-color: wheat;
+}
+
+#spin-button {
+  height: 200px;
+  background-color: tomato;
+}
+
+#teams {
+  height: 200px;
+  background-color: oldlace;
+}
