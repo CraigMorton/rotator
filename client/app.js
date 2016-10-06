@@ -1,3 +1,4 @@
+require("./styles/main.css");
 var students = require('../data/students.js');
 
 window.onload = () => {
