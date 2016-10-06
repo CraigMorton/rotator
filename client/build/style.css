@@ -12,15 +12,21 @@ img {
 }
 
 #spinner {
-  background-color: oldlace;
+  
 }
 
 #spin-button {
-  background-color: tomato;
+
 }
+/**
+yellow #FBFFB9
+peach #FDD692
+red #EC7357
+brown #754F44
+**/
 
 #teams {
-  background-color: oldlace;
+  margin: 20px;
 }
 
 .flex {
@@ -39,3 +45,9 @@ img {
   flex-wrap: wrap;
 }
 
+#spin-button button {
+  border-radius: 20%;
+  border: 1px solid #aaa;
+  padding: 15px;
+  background-color: 
+}
