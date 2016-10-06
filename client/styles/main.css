@@ -1,7 +1,11 @@
 @import 'normalize.css';
-$red: "red";
+$primary: #FBFFB9;
+$secondary: #FDD692;
+$third: #EC7357;
+$fourth: #754F44;
+
 body {
-  background-color: $red;
+  background-color: $primary;
 }
 
 h1 {
@@ -20,12 +24,6 @@ img {
 #spin-button {
 
 }
-/**
-yellow #FBFFB9
-peach #FDD692
-red #EC7357
-brown #754F44
-**/
 
 #teams {
   margin: 20px;
