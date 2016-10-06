@@ -5,8 +5,11 @@ window.onload = () => {
   var container = document.querySelector('#images-container');
 
   for (var team of students) {
-    doStuff();
+    //doStuff();
   }
+
+  var Teams = require('./models/teams.js');
+  var teams = new Teams();
 }
 
 console.log(students);
