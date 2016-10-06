@@ -14,7 +14,6 @@ img {
 }
 
 #spin-button {
-  height: 200px;
   background-color: tomato;
 }
 
@@ -22,3 +21,16 @@ img {
   height: 200px;
   background-color: oldlace;
 }
+
+.flex {
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.center {
+  justify-content: center;
+}
+
