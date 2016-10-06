@@ -1,0 +1,15 @@
+#spin-button button {
+  border-radius: 20%;
+  border: 1px solid #aaa;
+  padding: 15px;
+  background-color: $second;
+}
+
+#spinner {
+  background-color: white;
+}
+
+#spinner-container {
+  width: 80%;
+  margin: 0px auto;
+}

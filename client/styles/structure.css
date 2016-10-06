@@ -1,5 +1,6 @@
 body {
   background-color: $primary;
+  color: $third;
 }
 
 h1 {
