@@ -50,8 +50,11 @@
 	  var container = document.querySelector('#images-container');
 	
 	  for (var team of students) {
-	    doStuff();
+	    //doStuff();
 	  }
+	
+	  var Teams = __webpack_require__(2);
+	  var teams = new Teams();
 	}
 	
 	console.log(students);
@@ -98,6 +101,19 @@
 	]
 	
 	module.exports = students;
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var students = __webpack_require__(1);
+	
+	var Teams = function() {}
+	
+	Teams.prototype.blah = function() {}
+	
+	module.exports = Teams;
 
 
 /***/ }
