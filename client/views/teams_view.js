@@ -1,5 +1,6 @@
 var TeamsView = function(teams) {
   this.teams = teams;
+  this.teamsRendered = 0;
 }
 
 TeamsView.prototype.createImage = function(student) {
@@ -21,9 +22,9 @@ TeamsView.prototype.displayTeam = function(team) {
 }
 
 TeamsView.prototype.render = function() {
-  for (var team of this.teams) {
-    this.displayTeam(team);
-  }
+  if (!this.teams[this.teamsRendered]) return;  
+  this.displayTeam(teams[this.teamsRendered]);
+  this.teamsRendered++;
 }
 
 module.exports = TeamsView;
