@@ -1,10 +1,10 @@
+require('./styles/main.css');
+
+var TeamsView = require('./views/teams_view.js');
 var students = require('../data/students.js');
 
-window.onload = () => {
-  var container = document.querySelector('#images-container');
-  for (var team of students) {
-    doStuff();
-  }
+var app = () => {
+  new TeamsView(students);
 }
 
-console.log(students);
+window.onload = app;
