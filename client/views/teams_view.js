@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-var Teams = require('../models/teams');
-
-var TeamsView = function() {
-  this.model = new Team();
-  this.render(this.model);
-}
-
-TeamView.prototype.render = function() {
-
-=======
 var TeamsView = function(teams) {
   this.teams = teams;
 }
@@ -37,7 +26,6 @@ TeamsView.prototype = {
       this.displayTeam(team);
     }
   }
->>>>>>> develop
 }
 
 module.exports = TeamsView;
