@@ -1,0 +1,21 @@
+.spinner {
+  width: 200px;
+  height: 300px;
+  background-image: url('pika.jpg');
+  background-size: 200px 250px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  transition: background-position 0.8s linear;
+}
+
+
+div {
+  border: 1px solid grey;
+  height: 400px;
+  width: 300px;
+}
+/*
+.spinner:hover {
+  background-position: 0% 180%;
+  background-attachment: fixed;
+}*/

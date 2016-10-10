@@ -1,12 +1,9 @@
 var Spinner = require('../models/spinner.js');
 
-var SpinnerView = function() {
-  this.model = new Spinner();
-  this.render(this.model);
-}
+var SpinnerView = function() {}
 
-SpinnerView.prototype.render = function() {
-
+SpinnerView.prototype = {
+  render: function() {}
 }
 
 module.exports = SpinnerView;
