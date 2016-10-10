@@ -48,7 +48,6 @@ Spinner.prototype = {
     this.insertRandomStudents();
     this.insertTeam();
     this.currentTeam++;
-    console.log('Spinner:', this.slots);
   }
 }
 
