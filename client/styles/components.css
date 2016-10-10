@@ -1,4 +1,5 @@
 #spin-button button {
+  outline: none;
   border-radius: 20%;
   border: 1px solid $border;
   padding: 15px;
