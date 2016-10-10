@@ -37,15 +37,8 @@ Spinner.prototype = {
     }
   },
 
-  insertPikachus: function() {
-    for (var slot of this.slots) {
-      slot.push('pikachu');
-    }
-  },
-
   populate: function() {
     this.initSlots();
-    this.insertPikachus();
     this.insertRandomStudents();
     this.insertTeam();
     this.currentTeam++;

@@ -6,12 +6,16 @@ var SpinnerView = function(spinner) {
 }
 
 SpinnerView.prototype = {
+  spin: function() {
+    //do the stuff
+  },
+
   render: function() {
     var spinnerContainer = document.querySelector('#spinner');
     for (var slot of this.spinner.slots) {
       var img = document.createElement('img');
       img.className = 'rotator';
-      img.src = '/images/' + slot[0] + '.png';
+      img.src = '/images/pikachu.png';
       spinnerContainer.appendChild(img);
     }
   }

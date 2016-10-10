@@ -49,10 +49,4 @@ describe('Spinner', function() {
     spinner.insertRandomStudents();
     assert.equal('jeff', spinner.slots[0][3]);
   });
-
-  it('should add pikachus', function() {
-    spinner.initSlots();
-    spinner.insertPikachus();
-    assert.equal('pikachu', spinner.slots[0][0]);
-  });
 });
