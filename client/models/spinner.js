@@ -3,6 +3,7 @@ var Spinner = function(students, teams) {
   this.teams = teams;
   this.currentTeam = 0;
   this.slots = [];
+  this.populate();
 }
 
 Spinner.prototype = {

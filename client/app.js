@@ -7,9 +7,8 @@ var SpinnerView = require('./views/spinner_view.js');
 var TeamsView = require('./views/teams_view.js');
 
 var app = function() {
-  var teamsView = new TeamsView(teams);
   var spinner = new Spinner(students, teams);
-  spinner.populate();
+  var spinnerView = new SpinnerView(spinner);
 }
 
 window.onload = app;
