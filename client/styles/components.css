@@ -22,3 +22,20 @@
   width: 70%;
   margin: 0px auto;
 }
+
+#teams div {
+  padding: 0px;
+  margin: 0px;
+  padding: 0px 8px 5px 8px;
+}
+
+#teams div img {
+  margin: 0px;
+  padding: 0px 3px;
+}
+
+#teams p {
+  margin: 0px 0px 10px 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
