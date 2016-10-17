@@ -1,13 +1,15 @@
 body {
   background-color: $primary;
   color: $text;
+  font-family: $secondary-font;
 }
 
 h1 {
   margin: 10px 0px;
   line-height: 75px;
-  font-family: 'Amatic SC', cursive;
+  font-family: $primary-font;
   font-size: 4.5em;
+  color: $second;
 }
 
 img {

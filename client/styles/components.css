@@ -1,17 +1,20 @@
 #spin-button button {
   outline: none;
-  border-radius: 20%;
-  border: 1px solid $border;
-  padding: 15px;
-  background-color: $second;
-  color: $text;
-  font-size: 1em;
-  font-weight: 600;
-  margin: 20px 0px;
+  border-radius: 5%;
+  border: 3px solid $fifth;
+  padding: 10px 25px;
+  background-color: $sixth;
+  color: $fifth;
+  font-size: 3.5em;
+  margin: 30px 0px;
+  letter-spacing: 5px;
+  font-family: $third-font;
+  vertical-align: center;
 }
 
-#spin-button button:hover {
-  box-shadow: 2px 2px 5px $border;
+#teams {
+  padding-top:0px;
+  margin-top: 0px;
 }
 
 #spinner {
@@ -31,11 +34,13 @@
 
 #teams div img {
   margin: 0px;
-  padding: 0px 3px;
+  padding: 3px 3px;
 }
 
 #teams p {
   margin: 0px 0px 10px 0px;
   padding-bottom: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $border;
+  font-size: 1.5em;
+  text-align: center;
 }

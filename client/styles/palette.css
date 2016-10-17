@@ -1,7 +1,13 @@
-$primary: #a5dff9;
-$second: #ef5285;
-$third: #60c5ba;
-$fourth: #feee7d;
+$primary: #5C2751; /** Aubergine **/
+$second: #F5B700; /** Mustard **/
+$third: #AF4319; /** Orange **/
+$fourth: #DDD; /** Light grey **/
+$fifth: yellow; /** Yellow **/
+$sixth: red; /** Red **/
 
-$text: $fourth;
-$border: #AAA;
+$text: $second;
+$border: #EEE;
+
+$primary-font: 'Amatic SC', cursive;
+$secondary-font: 'Josefin Slab', serif;
+$third-font: 'Knewave', cursive;
