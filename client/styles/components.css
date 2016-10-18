@@ -17,12 +17,11 @@
   margin-top: 0px;
 }
 
-#spinner {
+.rotator {
   background-color: white;
 }
 
 #spinner-container {
-  width: 70%;
   margin: 0px auto;
 }
 
