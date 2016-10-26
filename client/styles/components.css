@@ -21,10 +21,6 @@
   margin: 0px auto;
 }
 
-#spinner div {
-  height: 180px;
-}
-
 #teams {
   padding-top:0px;
   margin: 0px 20px;
@@ -63,4 +59,5 @@
 .squisher {
   height: 180px;
   overflow: hidden;
+  -webkit-transition: height 0.5s linear 1s;
 }

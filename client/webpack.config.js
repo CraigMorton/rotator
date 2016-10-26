@@ -9,14 +9,11 @@ config = {
     path: "build"
   },
   devtool: 'source-map',
-  module: { //NEW
+  module: {
     loaders: [
       { test: /\.css$/,loader: 'style-loader!css-loader!postcss-loader'}
     ]
   },
-  // postcss: function () { //NEW
-  //   return [autoprefixer, precss];
-  // },
   postcss: function (webpack) {
       return [
           postcssImport({
@@ -27,11 +24,3 @@ config = {
 }
 
 module.exports = config;
-
-// postcss: function (webpack) {
-//     return [
-//         postcssImport({
-//             addDependencyTo: webpack
-//         })
-//     ];
-// }
