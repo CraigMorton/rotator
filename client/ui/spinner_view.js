@@ -2,12 +2,40 @@ var Spinner = require('../models/spinner.js');
 
 var SpinnerView = function(spinner) {
   this.spinner = spinner;
+  this.spin();
   //this.render();
 }
 
 SpinnerView.prototype = {
   spin: function() {
-    
+    this.doTheSquish();
+  },
+
+  doTheSquish: function() {
+    var element = document.querySelector(".squisher");
+    if(!element) return;
+    element.style.height = "180px";
+    var originalHeight = 180;
+    var currentHeight = 180;
+
+    var squish = function() {
+      element.style.height = currentHeight+"px";
+      currentHeight -= 2;
+      if(currentHeight >= 0) return setTimeout(squish,1);
+      newSquish();
+    }
+
+    var newSquish = () => {
+      currentHeight = originalHeight;
+      element.setAttribute('class',"");
+      if(!element.nextElementSibling) {
+        return this.doTheSquish();
+      }
+      element = element.nextElementSibling;
+      setTimeout(squish,1);
+    }
+
+    setTimeout(squish,1);
   },
 
   render: function() {

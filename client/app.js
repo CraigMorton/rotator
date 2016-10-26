@@ -11,7 +11,7 @@ var ButtonHandler = require('./ui/button_handler.js');
 var app = function() {
   var spinner = new Spinner(students, teams);
   var spinnerView = new SpinnerView(spinner);
-  var buttonHandler = new ButtonHandler(spinnerView);
+  //var buttonHandler = new ButtonHandler(spinnerView);
 }
 
 window.onload = app;

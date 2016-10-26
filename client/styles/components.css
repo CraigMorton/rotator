@@ -15,11 +15,14 @@
 .rotator {
   background-color: white;
   width: 119px;
-  max-height: 100%;
 }
 
 #spinner {
   margin: 0px auto;
+}
+
+#spinner div {
+  height: 180px;
 }
 
 #teams {
@@ -54,10 +57,10 @@
   height: 180px;
   width: 119px;
   margin: 10px;
- /* overflow: hidden;*/
+  overflow: hidden;
 }
 
 .squisher {
-  max-height: 180px;
+  height: 180px;
   overflow: hidden;
 }
