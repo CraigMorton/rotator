@@ -15,7 +15,7 @@
 .rotator {
   background-color: white;
   width: 119px;
-  margin: 10px;
+  max-height: 100%;
 }
 
 #spinner {
@@ -53,5 +53,11 @@
 .slot {
   height: 180px;
   width: 119px;
+  margin: 10px;
+ /* overflow: hidden;*/
+}
+
+.squisher {
+  max-height: 180px;
   overflow: hidden;
 }

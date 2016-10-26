@@ -7,7 +7,7 @@ var SpinnerView = function(spinner) {
 
 SpinnerView.prototype = {
   spin: function() {
-    console.log(this.spinner.slots);
+    
   },
 
   render: function() {
