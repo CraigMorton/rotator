@@ -8,10 +8,6 @@ var SpinnerView = function(spinner) {
 
 SpinnerView.prototype = {
   spin: function() {
-    this.doTheSquish();
-  },
-
-  doTheSquish: function() {
     var element = document.querySelector(".squisher");
     if(!element) return;
     element.style.height = "180px";
@@ -29,7 +25,7 @@ SpinnerView.prototype = {
       currentHeight = originalHeight;
       element.setAttribute('class',"");
       if(!element.nextElementSibling) {
-        return this.doTheSquish();
+        return this.spin();
       }
       element = element.nextElementSibling;
       setTimeout(squish,1);
