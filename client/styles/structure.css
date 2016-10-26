@@ -14,6 +14,7 @@ h1 {
 
 img {
   height: 180px;
+  width: 119px;
 }
 
 #teams {
@@ -26,6 +27,10 @@ img {
 
 .row {
   flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
 }
 
 .center {

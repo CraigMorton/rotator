@@ -2,12 +2,12 @@ var Spinner = require('../models/spinner.js');
 
 var SpinnerView = function(spinner) {
   this.spinner = spinner;
-  this.render();
+  //this.render();
 }
 
 SpinnerView.prototype = {
   spin: function() {
-    //do the stuff
+    console.log(this.spinner.slots);
   },
 
   render: function() {

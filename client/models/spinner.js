@@ -8,6 +8,7 @@ var Spinner = function(students, teams) {
 
 Spinner.prototype = {
   initSlots: function() {
+    this.slots = [];
     var currentTeam = this.teams[this.currentTeam];
     for (var student of currentTeam) {
       this.slots.push([]);
