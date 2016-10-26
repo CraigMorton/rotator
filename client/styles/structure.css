@@ -14,6 +14,7 @@ h1 {
 
 img {
   height: 180px;
+  width: 119px;
 }
 
 #teams {
@@ -34,4 +35,8 @@ img {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.spaced {
+  justify-content: space-around;
 }
