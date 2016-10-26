@@ -24,7 +24,7 @@ img {
   display: flex;
 }
 
-.row{
+.row {
   flex-direction: row;
 }
 

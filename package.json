@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha client/models/specs",
+    "test": "mocha --reporter nyan client/models/specs",
     "start": "node server.js"
   },
   "author": "",

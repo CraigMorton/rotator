@@ -49,4 +49,11 @@ describe('Spinner', function() {
     spinner.insertRandomStudents();
     assert.equal('jeff', spinner.slots[0][3]);
   });
+
+
+  // for(i = 0; i< 5000; i++) {
+  //   it('is true', function() {
+  //     assert.equal(true, true);
+  //   });
+  // }
 });
